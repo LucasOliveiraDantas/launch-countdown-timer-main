@@ -1,0 +1,113 @@
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+body{
+	background-color: hsl(235, 16%, 14%);
+	background-image: url(images/pattern-hills.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/bg-stars.svg);
+}
+
+.title-main{
+	color: white;
+	text-transform: uppercase;
+	font-size: 20.8px;
+	font-weight: 700;
+	letter-spacing: 8.3px;
+	margin-top: 5rem;
+}
+.timer{
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+	margin-top: 6.5rem;
+}
+
+.area-timer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1.5rem;
+	
+
+}
+
+.area-timer div{
+	background: linear-gradient(0deg, hsl(236, 21%, 26%) 50%, hsl(236, 21%, 22%) 50%);
+	width: 148px;
+	height: 141px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	box-shadow: 0rem 0.55rem 0rem hsl(234, 17%, 12%);
+	position: relative;
+	
+
+}
+
+.area-timer span{
+	color: hsl(237, 18%, 59%);
+	font-size: 15px;
+	letter-spacing: 5px;
+}
+.area-timer .desc-date{
+	color: hsl(345, 95%, 68%);
+	font-size: 78px;
+	letter-spacing: 0rem;
+}
+
+.area-timer div .detail{
+	width: 13.5px;
+	height: 13.5px;
+	border-radius: 50%;
+	background-color: hsl(235, 16%, 14%);
+
+}
+.area-timer div .detail-1 {
+	
+	position: absolute;
+	top: 45%;
+	left: -0.42rem;
+	
+	
+}
+
+.area-timer div .detail-2 {
+	
+	position: absolute;
+	top: 45%;
+	right: -0.42rem;
+	
+	
+}
+
+.midia-link{
+	display: flex;
+	align-items: center;
+	margin-top: 15.75rem;
+	column-gap: 2rem;
+}
+
+.midia-link a img:hover{
+	filter: invert(67%) sepia(43%) saturate(6213%) hue-rotate(310deg) brightness(100%) contrast(98%);
+}
