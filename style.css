@@ -14,7 +14,9 @@ body{
 	background-image: url(images/pattern-hills.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
-}
+
+
+}	
 
 .main{
 	display: flex;
@@ -74,6 +76,7 @@ body{
 	color: hsl(345, 95%, 68%);
 	font-size: 78px;
 	letter-spacing: 0rem;
+	opacity: 0.6;
 }
 
 .area-timer div .detail{
@@ -110,4 +113,68 @@ body{
 
 .midia-link a img:hover{
 	filter: invert(67%) sepia(43%) saturate(6213%) hue-rotate(310deg) brightness(100%) contrast(98%);
+}
+
+@media (width < 720px){
+
+
+	.main{
+		padding: 0rem 1.5rem ;
+	}
+	.title-main{
+		margin-top: 8.85rem;
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 6px;
+
+	}
+	.timer{
+		display: flex;
+		column-gap: 0rem;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 3.5rem;
+
+	}
+	.area-timer{
+		width: 70px;
+		row-gap: 0.88rem;
+
+	}
+
+	.area-timer div{
+		width: 70px;
+		height: 66.5px;
+		border-radius: 0.3rem;
+		box-shadow: 0rem 0.35rem 0rem hsl(234, 17%, 12%);
+
+	}
+
+	.area-timer .desc-date{
+		color: hsl(345, 95%, 68%);
+		font-size: 36px;
+		letter-spacing: 0rem;
+		opacity: 1;
+	}
+
+	.area-timer span{
+		font-size: 6.5px;
+		letter-spacing: 3.5px;
+
+	}
+	
+	.area-timer div .detail{
+		width: 9.5px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: hsl(235, 16%, 14%);
+
+	}
+
+	.midia-link{
+		display: flex;
+		align-items: center;
+		margin-top: 16.35rem;
+		column-gap: 2rem;
+	}
 }
